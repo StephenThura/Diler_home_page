@@ -1,0 +1,212 @@
+html
+    head
+        title Diler
+        
+        link(rel="stylesheet" href="style.css")
+        //- Bootstrap CSS
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous")
+        //- Bootstrap JS
+        script(src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous")
+        script(src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous")
+        script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous")
+        //- fontawesome
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css")
+        //- Font
+        link(href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet")
+    body
+        //- Header
+        #banner
+                nav(class="navbar navbar-expand-md navbar-default pt-3")
+                    .container
+                        a(href="index.html" class="navbar-brand logo-text")
+                            img(src="img/logo.svg" width="120px"
+                        height="120px" id="logo")
+                        button(class="navbar-toggler navbar-dark drop-down" data-toggle="collapse" data-target="#mynav")
+                            span(class="navbar-toggler-icon")
+                        div(class="collapse navbar-collapse" id="mynav")
+                            ul(class="navbar-nav ml-auto" id="nav-bar")
+                                li(class="nav-item pr-4 active")
+                                    a(href="#" class="nav-link" id="l") Home
+                                li(class="nav-item pr-4")
+                                    a(href="#" class="nav-link" id="l") Our Sevices
+                                li(class="nav-item pr-4")
+                                    a(href="#" class="nav-link" id="l") About
+                                li(class="nav-item pr-4")
+                                    a(href="#" class="nav-link" id="l") Blog
+                                li(class="nav-item pr-4")
+                                    a(href="#" class="nav-link" id="l") Contact Us
+                div(class="container d-flex flex-column align-items-start")
+                    div(class="text-show-case")
+                        div(class="text-case")
+                            h1 Transporation Service
+                            h2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos blanditiis alias reiciendis ullam neque consequatur.
+        //- About us
+        .container
+            .row
+                div(class="col-6 mt-5")
+                    h1
+                        b About Us
+                    p. 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, deleniti libero asperiores molestiae
+                        commodi totam, eaque voluptatibus quis velit cumque laudantium eveniet necessitatibus magni
+                        consequuntur possimus beatae. Quas harum corporis in voluptas, architecto adipisci at?
+                    a(href="" style="color:orange;") Read More...
+                div(class="col-6")
+                    img(src="img/white-volvo.jpg" alt="" id="aboutusimage")
+        //- OurServices
+        div(class="container-fluid" id="ourservices")
+            p#ourseviceheader Our Services
+            div(class="row offset-1 ")
+                div(class="col-5")
+                    h5 AGENCY SIGN
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, earum?
+                div(class="col-5")
+                    h5 TRANSPORATION
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, earum?
+            br
+            br
+            div(class="row offset-1 py-5")
+                div(class="col-5")
+                    h5 FACTORY
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, earum?
+                div(class="col-5")
+                    h5 PACKING LINE
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, earum?
+        //- received_promotion
+        div(class="container-fluid" id="receive_promotion")
+            p Receive Promotion Information
+                button(class="btn" id="bb") Contact
+        //- What_People_Are_Saying
+        div(class="container-fluid mt-5")
+            p#people
+                b What People Are Saying
+            p#people_talk.
+                If you’re looking for the latest in wireless headphones for your enjoyment and private
+                listening, whether to TV, stereo, home entertainment such as theater, iTunes or Ipod, you might do well to
+                look at the highly recommended Sennheiser RS 130 wireless headphones.
+        
+            div(class="row offset-2 mt-5")
+                div(class="col-3")
+                    div(class="card" style="height: 20rem; width: 15rem;")
+                        img(src="img/lydia.png" class="card-img-top rounded-circle w-50" height="100" width="100"
+                        id="photo")
+                        div(class="card-body")
+                            center
+                                h3 Lydia Gibson
+                            center
+                                p.people_talking CEO
+                            center
+                                p.people_talking. 
+                                    A major turning point in the history of early philosophical
+                                    science was the controversial
+                div(class="col-3")
+                    div(class="card" style="height: 20rem; width: 15rem; background-color: #FF6947;") 
+                        img(src="img/jack.png" class="card-img-top rounded-circle w-50" height="100" width="100" id="photo")
+                        div(class="card-body") 
+                            center
+                                h3 Jack Hicks
+                        
+                            center
+                                p.people_talking Manager
+                            center
+                                p.people_talking. 
+                                    A major turning point in the history of early philosophical
+                                    science was the controversial
+                div(class="col-3")
+                    div(class="card" style="height: 20rem; width: 15rem;") 
+                        img(src="img/Photo 3.png" class="card-img-top rounded-circle w-50" height="100" width="100" id="photo")
+                        div(class="card-body")
+                            center
+                                h3 Thiha Myo
+                            center
+                                p.people_talking. 
+                                    A major turning point in the history of early philosophical
+                                    science was the controversial
+        //- Blog
+        div(class="container-fluid mt-5")
+            h1
+                center
+                    b Blog
+            div(class="row mt-5 mx-5")
+                div(class="col-4")
+                    div(class="card" style="width:23rem;" )
+                        img(src="img/blog_img3.jpg" class="card-img-top" class="blog_img")
+                        div(class="card-body")
+                            h4(class="card-title") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ratione id consequuntur.
+                            p. 
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel facilis provident obcaecati quia illum eius.
+                div(class="col-4")
+                    div(class="card" style="width:23rem;" ) 
+                        img(src="img/blog_img1.jpg" class="card-img-top" class="blog_img")
+                        div(class="card-body")
+                            h4(class="card-title") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ratione id consequuntur. 
+                            p. 
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel facilis provident obcaecati quia illum eius.
+                div(class="col-4")
+                    div(class="card" style="width:23rem;") 
+                        img(src="img/blog_img2.jpg" class="card-img-top" class="blog_img")
+                        div(class="card-body")
+                            h4(class="card-title") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ratione id consequuntur.
+                            p(class="card-text"). 
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel facilis provident obcaecati quia illum eius.
+        //- Contact
+        div(class="container-fluid py-5" id="contact")
+            h1
+                center
+                    b Contact
+            form
+                div(class="row offset-1 my-3")
+                    div(class="col-5")
+                        div(class="row my-3")
+                            div(class="col-6")
+                                input(type="text" name="name" placeholder="Name" class="form-control" )
+                            div(class="col-6")
+                                input(type="text" name="phone" placeholder="Phone" class="form-control" )
+                   
+                        div(class="row my-2")
+                            div(class="col-6")
+                                input(type="number" name="phone" placeholder="Email" class="form-control" )
+                            div(class="col-6")
+                                input(type="number" name="phone" placeholder="Title" class="form-control" )
+                        button(type="submit" class="btn btn-light form-control") Submit
+                    div(class="col-5 my-3")
+                        textarea(class="form-control" placeholder="Message" rows="5" cols="60")
+
+        div(class="container-fluid")
+            img(src="img/Bitmap.jpg" width="1268px" height="450px")
+        div(class="container-fluid")
+            footer
+                ul
+                    li
+                        a(href="" id="l") Home 
+                    li 
+                        a(href="" id="l") Our Services 
+                    li
+                        a(href="" id="l") About 
+                    li
+                        a(href="" id="l") Blog
+                     li
+                        a(href="" id="l") Contact Us
+        
+                    
+           
+                                    
+                            
+
+            
+                    
+                            
+                        
+                    
+                
+            
+        
+
+    
+    
+
+            
